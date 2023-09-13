@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reaction Game</h1>
+        <div id="instructions" class="instructions">
+            Pressione as teclas correspondentes às cores:<br>
+            'A' para vermelho, 'D' para azul, 'W' para amarelo, 'S' para verde
+        </div>
+        <button id="start" class="start-button">Click to start the game</button>
+        <button id="reset" class="reset-button" onclick="resetGame()">Reset</button>
+        <div id="game-area" class="game-area">
+            <div id="fig" class="game-fig"></div>
+        </div>
+        <div id="results" class="results">
+            <div id="score" class="result-item">Score: 0</div>
+            <div id="average" class="result-item">Average: 0.00s</div>
+            <div id="errors" class="result-item">Errors: 0</div>
+            <div id="reaction" class="result-item">Time: <span id ="time"></span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
